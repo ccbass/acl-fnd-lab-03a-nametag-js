@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --headnavfoot-color: rgb(126, 162, 170);
+    --headnavfoot-font: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: var(--headnavfoot-color);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 3em;
+    font-family: var(--headnavfoot-font);
+}
+
+nav{
+    position: fixed;
+    left: 0px;
+    top: 10vh;
+    width: 15vw;
+    min-width: 150px; 
+    height: 85vh;
+    background-color:tomato;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--headnavfoot-font);
+    font-size: 2em;
+}
+
+main{
+    margin: 10vh 0vw 5vh 15vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        margin: 10vh 0vw 5vh 150px;
+    }
+}
+
+.nametag-container{
+    width: 400px;
+    height: 250px;
+    background: rgb(216, 216, 216);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.nametag-top{
+    background: red;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    height: 40%;
+}
+
+.hello{
+    display: block;
+    font-size: 3em;
+    font-family: Impact;
+    letter-spacing: .5em;
+    text-align: center;
+    margin-right: -.5em;
+}
+
+.below-hello {
+    display: block;
+    font-size: 1.5em;
+    font-family: Impact;
+    text-align: center;
+}
+
+.nametag-middle{
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.name-area{
+    font-family: 'Rock Salt', cursive;
+    font-size: 2em;
+}
+
+.nametag-bottom{
+    display: block;
+    height: 10%;
+    background: red;
+    border-radius: 0px 0px 20px 20px;
+}
+
+footer {
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    background-color: var(--headnavfoot-color);
+    bottom: 0px;
+    font-family: var(--headnavfoot-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
