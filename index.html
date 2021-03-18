@@ -6,6 +6,7 @@
     <link href="./styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
     <title>Nametag Page</title>
 </head>
 
@@ -20,20 +21,41 @@
     
     <main>
         <section class="nametag-container">
-            <section class="nametag-top">
+            <section class="nametag-top" id="nametag-top">
                 <div class="hello">HELLO</div>
                 <div class="below-hello">my name is</div>
             </section>
             <section class="nametag-middle">
-                <div class="name-area">Colin Bassett</div>
+                <div class="name-area" id="name-display">Colin Bassett</div>
             </section>
-            <section class="nametag-bottom"></section>
+            <section class="nametag-bottom" id="nametag-bottom"></section>
         </section>
+
+        <section id="button-modifiers">
+            <div class="name-change-container">
+                <input id="input-name" type="text" placeholder="Enter New Name:">
+                <button id="clickme" type="button">Update Name (18 Character Limit)</button>
+                <button id="font-btn" type="button">Change Font!</button>
+            </div>
+
+            
+            <section>
+                <button id="pink-color-btn" value="pink">Color: Pink!</button>
+                <button id="green-color-btn" value="lightgreen">Color: Light Green!</button>
+                <button id="blue-color-btn" value="lightblue">Color: Light Blue!</button>    
+            </section>
+            
+        </section>
+
+
+
     </main>
 
     <footer>
         <div>CB 2021</div>
     </footer>
+
+    <script type="module" src="./nametag.js"></script>
 </body>
 
 </html>

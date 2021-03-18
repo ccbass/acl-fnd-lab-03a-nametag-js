@@ -98,7 +98,7 @@ main{
 
 .name-area{
     font-family: 'Rock Salt', cursive;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .nametag-bottom{
@@ -118,4 +118,44 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.name-change-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#input-name{
+    text-align: center;
+    height: 20px;
+    padding: 2px;
+    border: 1px gray solid;
+}
+
+button{
+    padding: 5px;
+    margin-top: 4px; 
+}
+
+button:active{
+    border: 1px solid gray;
+    padding: 4px;
+}
+
+#button-modifiers section{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pink-color-btn{
+    background: pink;
+}
+#blue-color-btn{
+    background: lightblue;
+}
+
+#green-color-btn{
+    background: lightgreen;
 }
