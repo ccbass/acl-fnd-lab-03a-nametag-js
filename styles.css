@@ -90,6 +90,7 @@ main{
 
 .nametag-middle{
     display: flex;
+    flex-direction: column;
     height: 50%;
     align-items: center;
     justify-content: center;
@@ -99,6 +100,10 @@ main{
 .name-area{
     font-family: 'Rock Salt', cursive;
     font-size: 2rem;
+}
+
+.pronouns{
+    font-size: 1rem;
 }
 
 .nametag-bottom{
